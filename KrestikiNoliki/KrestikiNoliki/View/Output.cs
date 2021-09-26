@@ -18,9 +18,9 @@ namespace KrestikiNoliki.View
 
             Console.WriteLine();
 
-            for(int index1=0;index1< field.Cells.GetLength(0); index1++)
+            for (int index1 = 0; index1 < field.Cells.GetLength(0); index1++)
             {
-                for(int index2=0;index2< field.Cells.GetLength(0); index2++)
+                for (int index2 = 0; index2 < field.Cells.GetLength(0); index2++)
                 {
                     switch (field.Cells[index2, index1])
                     {
@@ -35,7 +35,7 @@ namespace KrestikiNoliki.View
                             break;
                     }
                 }
-                Console.WriteLine(index1);
+                Console.WriteLine(index1 + 1);
             }
             for (int index = 0; index < field.Cells.GetLength(0); index++)
             {
