@@ -36,7 +36,18 @@ namespace KrestikiNoliki.Controller
                     return false;
                 }
             }
-            return false;
+
+            for(int index1 = 0; index1 < field.Cells.GetLength(0); index1++)
+            {
+                for(int index2 = 0; index2 < field.Cells.GetLength(0); index2++)
+                {
+                    if (field.Cells[index1, index2] == 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         public static int PossibleTriplesCheck(int[,] cells, int value)
